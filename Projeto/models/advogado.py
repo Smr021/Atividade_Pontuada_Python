@@ -1,8 +1,8 @@
-from projeto.models.funcionario        import Funcionario
-from projeto.models.endereco           import Endereco
-from projeto.models.enums.sexo         import Sexo
-from projeto.models.enums.estadoCivil  import EstadoCivil
-from projeto.models.enums.setor        import Setor
+from models.funcionario        import Funcionario
+from models.endereco           import Endereco
+from models.enums.sexo         import Sexo
+from models.enums.estadoCivil  import EstadoCivil
+from models.enums.setor        import Setor
 
 class Advogado(Funcionario):
     def __init__(self,id:str,nome:str,telefone:str,email:str,
@@ -22,12 +22,13 @@ class Advogado(Funcionario):
         return self.oab
     
 
-    """Método para verificação do oab invalido"""
     def _verificar_oab_tipo_invalido_retorna_erro(self,valor):
+        """Método para verificação do oab invalido"""
         if not isinstance (valor,str):
             raise TypeError('O oab deve ser um texto.')
 
     def _verificar_oab_vazio_invalido_retorna_erro(self,valor):
+         """Método para verificação do oab vazio"""
          if not valor.strip(): 
             raise TypeError('O oab não pode estar vazio.')
 
