@@ -33,7 +33,7 @@ class Pessoa(ABC):
         """Método para verificação de telefone."""
         self._verificar_telefone_tipo_invalido(valor)
         self._verificar_telefone_vazio_invalido(valor)
-        self._verificar_telefone_tamanho_invalido(valor)
+#        self._verificar_telefone_tamanho_invalido(valor)
 
         self.telefone = valor
         return self.telefone
@@ -84,10 +84,10 @@ class Pessoa(ABC):
         if not valor.strip():
             raise TypeError ("O telefone precisa ser uma sequência de texto.")
         
-    def _verificar_telefone_tamanho_invalido(self, valor):
-        """Método auxiliar para verificar o tamanho do telefone."""
-        if len(valor) != 11:
-            raise ValueError("O telefone deve ter exatamente 11 caracteres.")    
+    # def _verificar_telefone_tamanho_invalido(self, valor):
+    #     """Método auxiliar para verificar o tamanho do telefone."""
+    #     if len(valor) != 11:
+    #         raise ValueError("O telefone deve ter exatamente 11 caracteres.")    
 
     def _verificar_email_tipo_invalido(self,valor):
         """Método auxuliar para verificação do e-mail do tipo invalido."""

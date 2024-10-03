@@ -124,5 +124,4 @@ class Funcionario(Fisica,ABC):
             f"\nMatrícula: {self.matricula}"
             f"Setor: {self.setor.value}"
             f"\nSalário: R$ {self.salario} reais"  
-            f"\nSalário final: R$ {self.salario_final()} reais"
             )

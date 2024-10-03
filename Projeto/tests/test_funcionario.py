@@ -22,7 +22,7 @@ def test_rg_valido(funcionario_valido):
 def test_matricula_valida(funcionario_valido):
     assert funcionario_valido.matricula == "021024" 
 
-def test_salario_valirio(funcionario_valido):
+def test_salario_valario(funcionario_valido):
     assert funcionario_valido.salario == 10000       
 
 
