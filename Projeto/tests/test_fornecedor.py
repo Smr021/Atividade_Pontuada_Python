@@ -1,7 +1,7 @@
 import pytest
-from models.fornecedor              import Fornecedor
-from models.endereco                import Endereco
-from models.enums.unidadeFederativa import UnidadeFederativa
+from Projeto.models.fornecedor              import Fornecedor
+from Projeto.models.endereco                import Endereco
+from Projeto.models.enums.unidadeFederativa import UnidadeFederativa
 
 
 # Boas práticas de programação.

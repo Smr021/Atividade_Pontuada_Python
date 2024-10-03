@@ -1,12 +1,10 @@
 import pytest
-from abc                            import ABC, abstractmethod
-from models.pessoa                  import Pessoa
-from models.endereco                import Endereco
-from models.enums.unidadeFederativa import UnidadeFederativa
+from Projeto.models.pessoa import Pessoa
+from Projeto.models.endereco import Endereco
+from Projeto.models.enums.unidadeFederativa import UnidadeFederativa
 
 # Boas práticas de progamação.
 @pytest.fixture
-
 def pessoa_valida():
     pessoa = Pessoa(7,"Fuboca","71912345678","fuboca@gmail.com",Endereco("Rua A", "12","Perto","12345","Salvador",UnidadeFederativa.BAHIA))
     return pessoa

@@ -1,9 +1,9 @@
 from abc                               import ABC, abstractmethod
-from models.fisica                     import Fisica
-from models.endereco                   import Endereco
-from models.enums.sexo                 import Sexo
-from models.enums.estadoCivil          import EstadoCivil
-from models.enums.setor                import Setor
+from Projeto.models.fisica                     import Fisica
+from Projeto.models.endereco                   import Endereco
+from Projeto.models.enums.sexo                 import Sexo
+from Projeto.models.enums.estadoCivil          import EstadoCivil
+from Projeto.models.enums.setor                import Setor
 
 @abstractmethod
 class Funcionario(Fisica,ABC):

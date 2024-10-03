@@ -1,5 +1,5 @@
-from models.juridica import Juridica
-from models.endereco import Endereco
+from Projeto.models.juridica import Juridica
+from Projeto.models.endereco import Endereco
 
 class Prestacao_servico(Juridica):
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoEstadual: str, contratoInicio: str, contratoFim: str ) -> None:

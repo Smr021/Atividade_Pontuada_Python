@@ -1,10 +1,10 @@
 from abc                               import ABC, abstractmethod
-from models.pessoa                     import Pessoa
-from models.endereco                   import Endereco
-from models.enums.sexo                 import Sexo
-from models.enums.estadoCivil          import EstadoCivil
+from Projeto.models.pessoa                     import Pessoa
+from Projeto.models.endereco                   import Endereco
+from Projeto.models.enums.sexo                 import Sexo
+from Projeto.models.enums.estadoCivil          import EstadoCivil
 
-
+@abstractmethod
 class Fisica(Pessoa,ABC):
     def __init__(self,id:str,nome:str,telefone:str,email:str,
                  endereco: Endereco,

@@ -1,10 +1,10 @@
 import pytest
-from models.funcionario                      import Funcionario
-from models.endereco                         import Endereco
-from models.enums.unidadeFederativa          import UnidadeFederativa
-from models.enums.sexo                       import Sexo
-from models.enums.estadoCivil                import EstadoCivil
-from models.enums.setor                      import Setor
+from Projeto.models.funcionario                      import Funcionario
+from Projeto.models.endereco                         import Endereco
+from Projeto.models.enums.unidadeFederativa          import UnidadeFederativa
+from Projeto.models.enums.sexo                       import Sexo
+from Projeto.models.enums.estadoCivil                import EstadoCivil
+from Projeto.models.enums.setor                      import Setor
 
 # Boas práticas de progamação.
 @pytest.fixture

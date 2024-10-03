@@ -1,6 +1,6 @@
 import pytest
-from models.endereco                import Endereco
-from models.enums.unidadeFederativa import UnidadeFederativa
+from Projeto.models.endereco                import Endereco
+from Projeto.models.enums.unidadeFederativa import UnidadeFederativa
 
 # Boas práticas de programação.
 @pytest.fixture

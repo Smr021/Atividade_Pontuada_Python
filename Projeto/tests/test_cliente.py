@@ -1,9 +1,9 @@
 import pytest
-from models.cliente                  import Cliente
-from models.enums.sexo               import Sexo
-from models.enums.estadoCivil        import EstadoCivil
-from models.endereco                 import Endereco
-from models.enums.unidadeFederativa  import UnidadeFederativa
+from Projeto.models.cliente                  import Cliente
+from Projeto.models.enums.sexo               import Sexo
+from Projeto.models.enums.estadoCivil        import EstadoCivil
+from Projeto.models.endereco                 import Endereco
+from Projeto.models.enums.unidadeFederativa  import UnidadeFederativa
 
 # Boas práticas de programação.
 @pytest.fixture

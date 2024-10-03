@@ -1,7 +1,7 @@
 import pytest
-from models.juridica                import Juridica
-from models.endereco                import Endereco
-from models.enums.unidadeFederativa import UnidadeFederativa
+from Projeto.models.juridica                import Juridica
+from Projeto.models.endereco                import Endereco
+from Projeto.models.enums.unidadeFederativa import UnidadeFederativa
 
 # Boas práticas de Programação.
 @pytest.fixture

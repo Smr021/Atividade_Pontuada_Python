@@ -1,8 +1,8 @@
 from abc             import ABC, abstractmethod
-from models.pessoa   import Pessoa
-from models.endereco import Endereco
+from Projeto.models.pessoa   import Pessoa
+from Projeto.models.endereco import Endereco
 
-
+@abstractmethod
 class Juridica(Pessoa,ABC):
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoEstadual: str) -> None:
         super().__init__(id, nome, telefone, email, endereco)

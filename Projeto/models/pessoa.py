@@ -1,5 +1,5 @@
 from abc               import ABC, abstractmethod
-from models.endereco   import Endereco
+from Projeto.models.endereco   import Endereco
 
 @abstractmethod
 class Pessoa(ABC):
